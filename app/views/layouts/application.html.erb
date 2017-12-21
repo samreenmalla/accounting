@@ -9,6 +9,14 @@
   </head>
 
   <body>
+
+  	<nav class="navbar navbar-inverse">
+  <ul class="nav navbar-nav">
+ 	<li><%= link_to 'Simple Accounting', root_path %></li>
+    <li><%= link_to 'New Record', new_account_path %></li>
+  </ul>
+</nav>
+
     <%= yield %>
   </body>
 </html>
