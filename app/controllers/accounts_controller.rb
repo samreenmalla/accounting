@@ -15,12 +15,13 @@ class AccountsController < ApplicationController
 	end
 
 	def update
-  @account = Account.find(params[:id])
-  if @account.update(account_params)
-    redirect_to root_path
-  else
-    redirect_to edit_account_path(params[:id])
-  end
+  		@account = Account.find(params[:id])
+  		@account.update(account_params)
+ 	 if @account.valid?
+    	redirect_to root_path
+  	else
+    	redirect_to edit_account_path(params[:id])
+  	end
 end
 
 	def destroy
