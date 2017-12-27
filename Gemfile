@@ -61,3 +61,5 @@ gem 'jquery-rails'
 gem 'simple_form'
 
  gem 'rails-controller-testing'
+
+ gem 'factory_girl_rails'
